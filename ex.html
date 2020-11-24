@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<!--xmlns  fix Outlook Scaling-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--Fix Outlook Scaling-->
+    <!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+    <title>Media queries</title>
+</head>
+
+<body>
+    <style>
+        
+
+        @media screen and (max-width:1160px) {
+            * [lang=x-outer] {
+                background: olive;
+                width: 100% !important;
+            }
+
+            .outer.outer {
+                width: 600px !important;
+            }
+        }
+
+        @media screen and (max-width:700px) {
+            * [lang=x-outer] {
+                background: teal;
+                width: calc(100vw - 250px) !important;
+                float: left;
+            }
+
+            .outer.outer {
+                width: 600px !important;
+                float: none;
+            }
+        }
+
+        @media screen and (max-width:550px) {
+            * [lang=x-outer] {
+                background: steelblue;
+                width: 300px !important;
+            }
+
+            .outer.outer {
+                width: 100% !important;
+            }
+        }
+    </style>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+        <tr>
+            <td>
+                <table align="center" width="600" lang="x-outer" border="0" cellspacing="0" cellpadding="0"
+                    class="outer">
+                    <tr>
+                        <td>
+                            <div style="padding:10px; border:1px solid #444444;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ante nisi, nec
+                                scelerisque tellus vehicula a. Integer facilisis justo vel dolor pellentesque varius.
+                                <br><br>
+                                Donec malesuada eleifend nibh, vitae sollicitudin nunc imperdiet a. Quisque pellentesque
+                                luctus nibh at varius. Donec ultrices, enim ut lobortis iaculis, nibh ligula malesuada
+                                leo, et venenatis velit leo at mi. Proin viverra nulla et nisi pulvinar, sit amet
+                                malesuada nunc pharetra. Vestibulum quis sodales enim. Aliquam id mollis nisl.
+                                <br><br>
+                                Integer rhoncus nisl at scelerisque mollis. Proin vel ante dui. Phasellus egestas eu
+                                mauris eget congue. Nullam et est faucibus, ultricies sapien quis, pretium odio.
+                                <br><br>
+                                Pellentesque dictum nec odio a pellentesque. Mauris condimentum convallis augue id
+                                malesuada. Ut ultricies leo sed odio semper vulputate. Quisque viverra tortor leo, a
+                                convallis tortor egestas a. Morbi bibendum, nisi vitae venenatis consectetur, arcu dui
+                                blandit nulla, suscipit sodales felis mi sed neque.
+                                <br><br>
+                                Suspendisse tincidunt volutpat quam, vel pharetra nulla tempor rutrum. Nullam tempus
+                                molestie lacus, non mattis justo viverra in. Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
