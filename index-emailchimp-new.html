@@ -1,7 +1,10 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-    xmlns:o="urn:schemas-microsoft-com:office:office">
-
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if IE]><html xmlns="http://www.w3.org/1999/xhtml" class="ie"><![endif]-->
+<!--[if !IE]><!-->
+    <html style="margin: 0px; padding: 0px; height: 100%;" xmlns="http://www.w3.org/1999/xhtml">
+    <!--<![endif]-->
+    
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!-- NAME: 1 COLUMN -->
@@ -331,15 +334,22 @@
         .header-date{
             text-align: left;
         }
+        .header-text {
+            width: 352px;
+        }
+        .header-logo {
+            width: 176px;
+        }
+         
     </style>
     
-    <style>
+    <style type="text/css">
         * [lang~="x-d-table-cell"] {
             display: table-cell;
             vertical-align: top;
             width: 180px;
         }
-        @media only screen and (max-width: 480px) {
+        @media all and (max-width: 480px) {
             * [lang~="x-d-table-cell"] {
                 display: table;
                 width: 100%;
@@ -347,12 +357,30 @@
         }
     </style>
 
-    <style>
+    <style type="text/css">
+        * [lang~="x-header-text"] tr td {
+            width: 352px;
+        }
+        * [lang~="x-header-logo"] tr td {
+            width: 176px;
+        }  
+        @media (max-width: 480px) {
+            * [lang~="x-header-text"] tr td,
+            * [lang~="x-header-logo"] tr td {
+                width: 100%;
+                text-align: center!important;
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+
+    <style type="text/css">
         @media only screen and (max-width: 480px) {
             .d-table-cell,
             * [lang~="x-d-table-cell"] {
                 display: table;
-                width: 100%;
+                max-width: 420px!important;
+                width: 100%!important;
             }
             .d-none {
                 display: none;
@@ -645,7 +673,7 @@
                         style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border: 0;max-width: 600px !important;">
                         <tr>
                             <td valign="top" id="templatePreheader"
-                                style="background:none;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 29px;">
+                                style="background:none;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 9px;">
                                 <!-- header logo + date -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock"
                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
@@ -661,50 +689,43 @@
                                                         <tr>
                                                             <td valign="top" class="mcnCaptionRightContentInner"
                                                                 style="padding: 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                <table class="mcnCaptionRightTextContentContainer"
-                                                                    align="left" border="0" cellpadding="0"
-                                                                    cellspacing="0" width="352"
+                                                                <table class="mcnCaptionRightTextContentContainer wi-352 header-text"
+                                                                    border="0" cellpadding="0"
+                                                                    lang="x-header-text"
+                                                                    cellspacing="0"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 21px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: left;">
-                                                                                <div class="header-date">
-                                                                                    <span style="font-size:14px">
-                                                                                        <span style="font-family:Roboto,arial,helvetica neue,helvetica,sans-serif">
-                                                                                            <strong style="font-size: 54px;color: #0093A6;line-height: 44px;">В курсе</strong><br>
-                                                                                            событий и экономических
-                                                                                            новостей
-                                                                                        </span><br>
-                                                                                        <span style="color: #8e8e8e;">1-15 ноября</span>
-                                                                                    </span>
-                                                                                </div>
-
+                                                                                <span style="font-size:14px">
+                                                                                    <span style="font-family:Roboto,arial,helvetica neue,helvetica,sans-serif">
+                                                                                        <strong style="font-size: 54px;color: #0093A6;line-height: 44px;">В курсе</strong><br>
+                                                                                        событий и экономических
+                                                                                        новостей
+                                                                                    </span><br>
+                                                                                    <span style="color: #8e8e8e;">1-15 ноября</span>
+                                                                                </span>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <table align="right" border="0" cellpadding="0"
+                                                                <table border="0" cellpadding="0"
                                                                     cellspacing="0"
-                                                                    class="mcnCaptionRightImageContentContainer"
-                                                                    width="176"
+                                                                    class="mcnCaptionRightImageContentContainer wi-176 header-logo"
+                                                                    lang="x-header-logo"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td class="mcnCaptionRightImageContent header-logo"
-                                                                                align="right" valign="top"
+                                                                                valign="top"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/%D1%8D%D0%B8%D1%86%20%D0%BB%D0%BE%D0%B3%D0%BE%20%D0%BD%D0%BE%D0%B2.png"
                                                                                     width="164"
+                                                                                    lang="x-text-center"
                                                                                     style="max-width: 164px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
-
-
-
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -728,133 +749,131 @@
                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 0;">
                                 <!-- header 1 АКТУАЛЬНОЕ В СТРАНЕ-->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock"
-                                    style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                    <tbody class="mcnTextBlockOuter">
-                                        <tr>
-                                            <td valign="top" class="mcnTextBlockInner"
-                                                style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                <!--[if mso]>
-				<table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
-				<tr>
-				<![endif]-->
+                                style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                <tbody class="mcnTextBlockOuter">
+                                    <tr>
+                                        <td valign="top" class="mcnTextBlockInner"
+                                            style="padding-top: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <!--[if mso]>
+            <table align="left" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+            <tr>
+            <![endif]-->
 
-                                                <!--[if mso]>
-				<td valign="top" width="600" style="width:600px;">
-				<![endif]-->
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                    style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
-                                                    width="100%" class="mcnTextContentContainer">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="mcnCaptionBottomImageContent" align="center"
-                                                                valign="top"
-                                                                style="padding: 0 0 12px 9px;padding-bottom: 12px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
-                                                                <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
-                                                                    style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
-                                                                    class="mcnImage">
+                                            <!--[if mso]>
+            <td valign="top" width="600" style="width:600px;">
+            <![endif]-->
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                style="max-width: 100%;min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                width="100%" class="mcnTextContentContainer">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="mcnCaptionBottomImageContent" align="center"
+                                                            valign="top"
+                                                            style="padding: 0 0 12px 9px;padding-bottom: 12px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                                            </td>
-                                                            <td valign="top" class="mcnTextContent"
-                                                                style="padding-top: 0;padding-right: 18px;padding-bottom: 12px;padding-left: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
 
-                                                                <h1 class="null"
-                                                                    style="display: block;margin: 0;padding: 0;color: #00a0b4;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 18px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">
-                                                                    АКТУАЛЬНОЕ В АГЕНТСТВЕ</h1>
+                                                            <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
+                                                                style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                class="mcnImage">
 
-                                                            </td>
 
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!--[if mso]>
-				</td>
-				<![endif]-->
+                                                        </td>
+                                                        <td valign="top" class="mcnTextContent"
+                                                            style="padding-top: 0;padding-right: 18px;padding-bottom: 12px;padding-left: 0px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
 
-                                                <!--[if mso]>
-				</tr>
-				</table>
-				<![endif]-->
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                                            <h1 class="null"
+                                                                style="display: block;margin: 0;padding: 0;color: #00a0b4;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 18px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;">
+                                                                АКТУАЛЬНОЕ В АГЕНТСТВЕ</h1>
+
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!--[if mso]>
+            </td>
+            <![endif]-->
+
+                                            <!--[if mso]>
+            </tr>
+            </table>
+            <![endif]-->
+                                        </td>
+                                    </tr>
+                                </tbody>
                                 </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" id="templateHeader"
+                                style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-image: none;background-repeat: no-repeat;background-position: center;background-size: cover;border-top: 0;border-bottom: 0;padding-top: 9px;padding-bottom: 18px;">
                                 <!-- column 1-1 -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                                    class="mcnCaptionBlock d-table-cell"
-                                    lang="x-d-table-cell"
-                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 10px 0 0 10px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                    <tbody class="mcnCaptionBlockOuter">
-                                        <tr>
-                                            <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                class="mcnCaptionBlock d-table-cell"
+                                lang="x-d-table-cell"
+                                style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 10px 0 0 10px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);Float: left;">
+                                <tbody class="mcnCaptionBlockOuter">
+                                    <tr>
+                                        <td class="mcnCaptionBlockInner" valign="top"
+                                            style="padding-top: 9px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
-                                                <table align="left" border="0" cellpadding="0" cellspacing="0"
-                                                    class="mcnCaptionBottomContent"
-                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td class="mcnCaptionBottomImageContent" align="center"
-                                                                valign="top"
-                                                                style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                <img alt=""
-                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/image%201.png"
-                                                                    width="100%"
-                                                                    style="min-width: 180px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
-                                                                    class="mcnImage">
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="mcnTextContent" valign="top"
-                                                                style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
-                                                                width="564">
-                                                                <span style="font-size:12px"><span
-                                                                        style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong>Оказание
-                                                                            поддержки предпринимателям, пострадавших в
-                                                                            результате пожара в «М5 Молл»</strong><br>
-                                                                        <br>
-                                                                          Министерство по делам территорий и
-                                                                        информационной политике Рязанской области
-                                                                        сообщает о том, что по предварительным данным
-                                                                        при пожаре в ТЦ «М5 Молл» никто не пострадал.
-                                                                        Была проведена эвакуация посетителей, выведено
-                                                                        более 250 человек.</span></span><br>
-                                                                <br>
-                                                                <span style="font-size:12px"><span
-                                                                        style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span
-                                                                            class="mc-toc-title"><strong><a
-                                                                                    href="http://test.ru"
-                                                                                    target="_blank"
-                                                                                    title="Подробнее &gt;&gt;"
-                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: bold;text-decoration: none;"><span
-                                                                                        style="color:#26a1bb">Подробнее
-                                                                                        &gt;&gt;</span></a></strong></span></span></span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                class="mcnCaptionBottomContent"
+                                                style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="mcnCaptionBottomImageContent" align="center"
+                                                            valign="top"
+                                                            style="padding: 0 18px 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                            <img alt=""
+                                                                src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/image%201.png"
+                                                                width="100%"
+                                                                style="min-width: 180px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                class="mcnImage">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="mcnTextContent" valign="top"
+                                                            style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
+                                                            width="564">
+                                                            <span style="font-size:12px"><span
+                                                                    style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong>#выздоравливайМ5Молл: о помощи предпринимателям, пострадавшим от пожара в ТРЦ «М5 Молл»</strong><br>
+                                                                    <br>
+                                                                    Бизнесмены получили всю необходимую консультационную, правовую, а также финансовую поддержку. Рязанцы надеются, что ТРЦ сможет вновь открыть свои двери в самое ближайшее время. </span></span><br>
+                                                            <br>
+                                                            <span style="font-size:12px"><span
+                                                                    style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><span
+                                                                        class="mc-toc-title"><strong><a
+                                                                                href="https://rv-ryazan.ru/ryazanskaya-oblast-vydelit-60-mln-rublej-na-pomoshh-predprinimatelyam-postradavshim-ot-pozhara-v-m5moll/"
+                                                                                target="_blank"
+                                                                                title="Подробнее &gt;&gt;"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #2BAADF;font-weight: bold;text-decoration: none;"><span
+                                                                                    style="color:#26a1bb">Подробнее
+                                                                                    &gt;&gt;</span></a></strong></span></span></span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
 
 
 
 
 
-                                            </td>
-                                        </tr>
-                                    </tbody>
+                                        </td>
+                                    </tr>
+                                </tbody>
                                 </table>
                                 <!-- column 1-2 -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%"
                                     class="mcnCaptionBlock d-table-cell"
                                     lang="x-d-table-cell"
-                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 0;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);Float: left;">
                                     <tbody class="mcnCaptionBlockOuter">
                                         <tr>
                                             <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                style="padding-top: 9px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
                                                 <table align="left" border="0" cellpadding="0" cellspacing="0"
@@ -864,7 +883,7 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                style="padding: 0 18px 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
 
@@ -881,12 +900,12 @@
                                                             <td class="mcnTextContent" valign="top"
                                                                 style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
                                                                 width="564">
-                                                                <span style="font-size:12px"><strong>Принятие бюджета
-                                                                        области на 2021 год:</strong></span><br>
+                                                                <span style="font-size:12px"><strong>«Рязанская область – один из лидеров страны по производительности труда»</strong>
+                                                                <br>Такую оценку дал глава Минэкономразвития РФ Максим Решетников в ходе визита в регион, познакомившись с практическими результатами реализации нацпроекта «Производительность труда и поддержка занятости».</span><br>
                                                                 <br>
                                                                 <span style="font-size:12px"><span
                                                                         style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong><a
-                                                                                href="http://test.ru" target="_blank"
+                                                                                href="https://agency62.ru/v-ryazani-sostoyalsya-delovoj-forum-vektor-proizvoditelnosti/" target="_blank"
                                                                                 title="Подробнее &gt;&gt;"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Подробнее
                                                                                 &gt;&gt;</a></strong></span></span>
@@ -907,11 +926,11 @@
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%"
                                     class="mcnCaptionBlock d-table-cell"
                                     lang="x-d-table-cell"
-                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 0px 10px 10px 0px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 0px 10px 10px 0px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);Float: left;">
                                     <tbody class="mcnCaptionBlockOuter">
                                         <tr>
                                             <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                style="padding-top: 9px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
                                                 <table align="left" border="0" cellpadding="0" cellspacing="0"
@@ -921,7 +940,7 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                style="padding: 0 18px 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
 
@@ -939,19 +958,11 @@
                                                                 style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
                                                                 width="564">
                                                                 <span style="font-size:12px"><span
-                                                                        style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong>Визит
-                                                                            министра экономического развития&nbsp;РФ
-                                                                            Максима Решетникова&nbsp;в рязанский
-                                                                            регион.  </strong><br>
+                                                                        style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong>Социальная направленность – основа областного бюджета 2021</strong><br>
                                                                         <br>
-                                                                        В Рязани состоялся второй деловой форум «Вектор
-                                                                        производительности». Его организаторами стали
-                                                                        министерство промышленности и экономического
-                                                                        развития Рязанской области и Региональный центр
-                                                                        компетенций, входящий в структуру Агентства
-                                                                        производственных систем и компетенций.<br>
+                                                                        Депутаты облдумы готовятся к рассмотрению во втором чтении главного экономического документа региона. В нем нашли отражение мероприятия, напрямую связанные с национальными целями.<br>
                                                                         <br>
-                                                                        <strong><a href="http://test.ru" target="_blank"
+                                                                        <strong><a href="https://minfin.ryazangov.ru/news/1185051/" target="_blank"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Подробнее
                                                                                 &gt;&gt;</a></strong></span></span>
                                                             </td>
@@ -1074,18 +1085,14 @@
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
-                                                                                <a href="#" target="_blank"
+                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank"
                                                                                     style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
-                                                                                        style="color:#000000">Встреча с
-                                                                                        руководителем ФНС Даниилом
-                                                                                        Егоровым</span></a><br>
+                                                                                        style="color:#000000">Смена системы налогообложения: чем заменить единый налог?</span></a><br>
                                                                                 <br>
-                                                                                Владимир Путин провёл рабочую встречу с
-                                                                                руководителем Федеральной налоговой
-                                                                                службы...
+                                                                                Остается чуть больше месяца до отмены режима ЕНВД – Единого налога на вмененный доход. На какие новые режимы налогообложения выгоднее переходить малому бизнесу? Выбираем до конца года.
                                                                             </td>
                                                                             <td>
-                                                                                <a href="#" target="_blank" style="text-decoration: none;">
+                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
                                                                                     width="60"
@@ -1161,19 +1168,95 @@
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
-                                                                                <a href="#" target="_blank"
+                                                                                <a href="https://rg.ru/2020/11/12/nalogovye-kanikuly-dlia-malogo-biznesa-prodlevaiut-do-konca-goda.html" target="_blank"
                                                                                     style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
-                                                                                        style="color:#000000">Пандемия
-                                                                                        привела к росту
-                                                                                        конкуренции</span></a><br>
+                                                                                        style="color:#000000">Налоговые каникулы продлятся до конца года</span></a><br>
                                                                                 <br>
-                                                                                Пандемия привела к росту конкуренции в
-                                                                                малом бизнесе и способствовала
-                                                                                уменьшению серых схем, показал новый
-                                                                                опрос Magram Market Research...
+                                                                                Отсрочка по платежам утверждена для пострадавшего из-за пандемии малого и среднего бизнеса и индивидуальных предпринимателей, работающих в ряде отраслей.
                                                                             </td>
                                                                             <td>
-                                                                                <a href="#" target="_blank" style="text-decoration: none;">
+                                                                                <a href="https://rg.ru/2020/11/12/nalogovye-kanikuly-dlia-malogo-biznesa-prodlevaiut-do-konca-goda.html" target="_blank" style="text-decoration: none;">
+                                                                                    <img alt=""
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
+                                                                                    width="60"
+                                                                                    style="max-width: 60px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    class="mcnImage">
+                                                                                </a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- row 3 ЗНАЧИМОЕ В СТРАНЕ -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock"
+                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 0 0 10px 10px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                    <tbody class="mcnCaptionBlockOuter">
+                                        <tr>
+                                            <td class="mcnCaptionBlockInner" valign="top"
+                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+
+
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                    class="mcnCaptionRightContentOuter" width="100%"
+                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td valign="top" class="mcnCaptionRightContentInner"
+                                                                style="padding: 0 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                    cellspacing="0"
+                                                                    class="mcnCaptionRightImageContentContainer"
+                                                                    width="176"
+                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="mcnCaptionRightImageContent"
+                                                                                align="center" valign="top"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+
+                                                                                <img alt=""
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%202covid19.png"
+                                                                                    width="158"
+                                                                                    style="max-width: 158px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    class="mcnImage">
+
+
+
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="mcnCaptionRightTextContentContainer"
+                                                                    align="right" border="0" cellpadding="0"
+                                                                    cellspacing="0" width="352"
+                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td valign="top" class="mcnTextContent"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
+                                                                                <a href="https://rg.ru/2020/11/08/reestr-malogo-biznesa-budet-obnovliatsia-ezhemesiachno.html " target="_blank"
+                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
+                                                                                        style="color:#000000">Реестр МСП будет обновляться ежемесячно</span></a><br>
+                                                                                <br>
+                                                                                Такое нововведение даст возможность малому бизнесу своевременно получать меры господдержки, льготы и преимущества при участии в госзакупках.
+                                                                            </td>
+                                                                            <td>
+                                                                                <a href="https://rg.ru/2020/11/08/reestr-malogo-biznesa-budet-obnovliatsia-ezhemesiachno.html " target="_blank" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
                                                                                     width="60"
@@ -1276,9 +1359,9 @@
 
 
                                                                                 <img alt=""
-                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%202.png"
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/office-1209640_1920.jpg"
                                                                                     width="100%"
-                                                                                    style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    style="max-width: 90px;border: 10px;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage important-region">
 
 
@@ -1288,7 +1371,7 @@
                                                                 </table>
                                                                 <table class="mcnCaptionLeftTextContentContainer"
                                                                     align="left" border="0" cellpadding="0"
-                                                                    cellspacing="0" width="480"
+                                                                    cellspacing="0" width="420"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
@@ -1349,7 +1432,7 @@
 
 
                                                                                 <img alt=""
-                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%2012.png"
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/imgonline-com-ua-Compressed-PUDoWBZzS5rn.jpg"
                                                                                     width="100%"
                                                                                     style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage important-region">
@@ -1361,32 +1444,19 @@
                                                                 </table>
                                                                 <table class="mcnCaptionLeftTextContentContainer"
                                                                     align="left" border="0" cellpadding="0"
-                                                                    cellspacing="0" width="480"
+                                                                    cellspacing="0" width="420"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
-                                                                                <a href="#" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
+                                                                                <a href="https://www.ryazangov.ru/news/ryazan/1191034/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
                                                                                     <span>
-                                                                                        Участники
-                                                                                        кластера строительных
-                                                                                        материалов обсудили
-                                                                                        совместный
-                                                                                        проект
+                                                                                        Экспортеров приглашают на VII форум «Сделано в России»
                                                                                     </span>
                                                                                     <br>
                                                                                     <span style="font-weight: normal;">
-                                                                                        19 ноября на базе центра
-                                                                                        кластерного развития АНО
-                                                                                        «Агентство развития
-                                                                                        производственных систем и
-                                                                                        компетенций» состоялась рабочая
-                                                                                        встреча по вопросу обсуждения
-                                                                                        совместного проекта участников
-                                                                                        кластера строительных материалов
-                                                                                        Рязанской
-                                                                                        области...
+                                                                                        Какой будет экономика третьего десятилетия и какие вызовы и возможности она создает для российского экспорта? Эти и другие темы будут обсуждаться на онлайн-форуме 9 декабря. К участию приглашаются все желающие. 
                                                                                     </span>
                                                                                 </a>
                                                                             </td>
@@ -1435,7 +1505,7 @@
 
 
                                                                                 <img alt=""
-                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%2014.png"
+                                                                                    src="#"
                                                                                     width="100%"
                                                                                     style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage important-region">
@@ -1447,118 +1517,19 @@
                                                                 </table>
                                                                 <table class="mcnCaptionLeftTextContentContainer"
                                                                     align="left" border="0" cellpadding="0"
-                                                                    cellspacing="0" width="480"
+                                                                    cellspacing="0" width="420"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
-                                                                                <a href="#" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
+                                                                                <a href="https://agency62.ru/uchastniki-klastera-stroitelnyh-materialov-obsudili-sovmestnyj-proekt/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
                                                                                     <span>
-                                                                                        Участники
-                                                                                        кластера строительных
-                                                                                        материалов обсудили
-                                                                                        совместный
-                                                                                        проект
+                                                                                        Кластерная кооперация дает плоды
                                                                                     </span>
                                                                                     <br>
                                                                                     <span style="font-weight: normal;">
-                                                                                        19 ноября на базе центра
-                                                                                        кластерного развития АНО
-                                                                                        «Агентство развития
-                                                                                        производственных систем и
-                                                                                        компетенций» состоялась рабочая
-                                                                                        встреча по вопросу обсуждения
-                                                                                        совместного проекта участников
-                                                                                        кластера строительных материалов
-                                                                                        Рязанской
-                                                                                        области...
-                                                                                    </span>
-                                                                                </a>
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-
-
-
-
-
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- row 4 ВАЖНОЕ В РЕГИОНЕ -->
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnCaptionBlock"
-                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                    <tbody class="mcnCaptionBlockOuter">
-                                        <tr>
-                                            <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-                                                <table border="0" cellpadding="0" cellspacing="0"
-                                                    class="mcnCaptionLeftContentOuter" width="100%"
-                                                    style="background:#ffffff none no-repeat center/cover;background-color: #ffffff;border-radius: 10px;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td valign="top" class="mcnCaptionLeftContentInner"
-                                                                style="padding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                <table align="right" border="0" cellpadding="0"
-                                                                    cellspacing="0"
-                                                                    class="mcnCaptionLeftImageContentContainer"
-                                                                    width="100"
-                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td class="mcnCaptionLeftImageContent"
-                                                                                align="left" valign="middle"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-                                                                                <img alt=""
-                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202020-11-21%20%D0%B2%2013.25%201.png"
-                                                                                    width="100%"
-                                                                                    style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
-                                                                                    class="mcnImage important-region">
-
-
-                                                                            </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                                <table class="mcnCaptionLeftTextContentContainer"
-                                                                    align="left" border="0" cellpadding="0"
-                                                                    cellspacing="0" width="480"
-                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td valign="top" class="mcnTextContent"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
-                                                                                <a href="#" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
-                                                                                    <span>
-                                                                                        Участники
-                                                                                        кластера строительных
-                                                                                        материалов обсудили
-                                                                                        совместный
-                                                                                        проект
-                                                                                    </span>
-                                                                                    <br>
-                                                                                    <span style="font-weight: normal;">
-                                                                                        19 ноября на базе центра
-                                                                                        кластерного развития АНО
-                                                                                        «Агентство развития
-                                                                                        производственных систем и
-                                                                                        компетенций» состоялась рабочая
-                                                                                        встреча по вопросу обсуждения
-                                                                                        совместного проекта участников
-                                                                                        кластера строительных материалов
-                                                                                        Рязанской
-                                                                                        области...
+                                                                                        Инвестиции, новые рабочие места и выгода для всех: рязанские предприятия — участники кластера Строительных материалов объединили свои усилия для совместного проекта. 
                                                                                     </span>
                                                                                 </a>
                                                                             </td>
@@ -1704,21 +1675,12 @@
                                                                                 style="padding-right: 18px;padding-top: 18px;padding-bottom: 48px;color: #434242;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;line-height: 150%;">
                                                                                 <div style="text-align: left;"><span
                                                                                         style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong><span
-                                                                                                style="font-size:14px">Безопасность
-                                                                                                — превыше
-                                                                                                всего!</span></strong><br>
+                                                                                                style="font-size:14px">Курс на повышение производительности труда </span></strong><br>
                                                                                         <br>
                                                                                         <span
-                                                                                            style="font-size:12px">Социальное
-                                                                                            дистанцирование — не только
-                                                                                            новая реальность, это и
-                                                                                            признанный во всем мире
-                                                                                            наиболее эффективный способ
-                                                                                            борьбы с распространением
-                                                                                            коронавирусной
-                                                                                            инфекции...</span></span><br>
+                                                                                            style="font-size:12px">Участников нацпроекта становится все больше. К концу 2020 года порядка половины компаний региона, подходящих под его критерии, будут вовлечены в работу по повышению производительности труда. Несмотря на пандемию, результаты тех, кто уже в проекте, впечатляют. Подробнее о том, каких успехов удалось достичь и как стать участником нацпроекта, здесь</span></span><br>
                                                                                     <br>
-                                                                                    <a href="#" target="_blank"
+                                                                                    <a href="https://rv-ryazan.ru/strategiya-uspexa-2/" target="_blank"
                                                                                         style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #434242;font-weight: bold;text-decoration: none;border: 1px solid #434242;border-radius: 50px;padding: 12px 28px;"><span
                                                                                             style="color:#434242">читать
                                                                                             дальше</span></a></div>
@@ -1813,25 +1775,17 @@
                                                                 style="padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
 
                                                                 
-                                                                <a href="http://ggg.com" target="_blank"
-                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">В
-                                                                    России может появиться система прослеживаемости
-                                                                    оборота зерна и продуктов его переработки</a>
+                                                                <a href="http://www.consultant.ru/law/hotdocs/59329.html/" target="_blank"
+                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Подписан закон о масштабных изменениях в НК РФ.</a>
                                                                 <br>
-                                                                <a href="http://ff.ru" target="_blank"
-                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Роспотребнадзор
-                                                                    не рекомендует гражданам покупать антибиотики без
-                                                                    назначения врача</a>
+                                                                <a href="http://government.ru/docs/40836/" target="_blank"
+                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Экспорт российской радиоэлектронной продукции получит поддержку в приоритетном порядке.</a>
                                                                 <br>
-                                                                <a href="#" target="_blank"
-                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Предложено
-                                                                    уточнить ТК в части отпусков для многодетных
-                                                                    работников</a>
+                                                                <a href="https://www.ryazangov.ru/documents/resolution_gov_ro/" target="_blank"
+                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">В Рязанской области НКО смогут получить субсидии на реализацию творческих проектов.</a>
                                                                 <br>                                                            
-                                                                <a href="http://ggg.com" target="_blank"
-                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">В
-                                                                    России может появиться система прослеживаемости
-                                                                    оборота зерна и продуктов его переработки</a>
+                                                                <a href="https://www.ryazangov.ru/upload/iblock/05b/70rg_20112020.docx" target="_blank"
+                                                                    style="display: block;border-left: 2px solid #e0e0e0;padding: 8px 15px;padding-right:0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;">Внесены изменения в распоряжение губернатора «О введении на территории Рязанской области режима повышенной готовности».</a>
                                                             </td>
                                                         </tr>
                                                     </tbody>
