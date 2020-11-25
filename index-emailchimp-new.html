@@ -170,7 +170,7 @@
             border: 0;
         }
 
-        h1 {
+        /* h1 {
             color: #00a0b4;
             font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 18px;
@@ -212,7 +212,7 @@
             line-height: 125%;
             letter-spacing: normal;
             text-align: left;
-        }
+        } */
 
         #templatePreheader {
             background-color: #fafafa;
@@ -334,13 +334,37 @@
         .header-date{
             text-align: left;
         }
+        
+    </style>
+
+    <style type="text/css">
         .header-text {
-            width: 352px;
+            width: 420px;
+            display: table-cell;
         }
         .header-logo {
             width: 176px;
+            display: table-cell;
         }
-         
+        * [lang~="x-header-text-td"] {
+            width: 420px;
+            display: table-cell;
+        }
+        * [lang~="x-header-logo-td"] {
+            width: 176px;
+            display: table-cell;
+        }
+    </style>
+
+    <style type="text/css">
+        * [lang~="x-header-text-td"] {
+            width: 420px;
+            display: table-cell;
+        }
+        * [lang~="x-header-logo-td"] {
+            width: 176px;
+            display: table-cell;
+        }
     </style>
     
     <style type="text/css">
@@ -349,8 +373,8 @@
             vertical-align: top;
             width: 180px;
         }
-        @media all and (max-width: 480px) {
-            * [lang~="x-d-table-cell"] {
+        @media (max-width: 477px) {
+            * [lang="x-d-table-cell"] {
                 display: table;
                 width: 100%;
             }
@@ -359,27 +383,72 @@
 
     <style type="text/css">
         * [lang~="x-header-text"] tr td {
-            width: 352px;
+            width: 420px;
+            display: table-cell;
         }
         * [lang~="x-header-logo"] tr td {
             width: 176px;
-        }  
+            display: table-cell;
+        }
+        * [lang~="x-country-phone-btn"] {
+            display: none;
+        }
         @media (max-width: 480px) {
+            * [lang~="x-d-none"] {
+                display: none!important;
+            }
+            * [lang~="x-w-100"] {
+                width: 100%!important;
+                text-align: center!important;
+            }
+            * [lang~="x-w-100-center"] {
+                width: 100%!important;
+            }
+            * [lang~="x-header-text"],
+            * [lang~="x-header-logo"] {
+                display: table!important;
+                width: 100%;
+            }
             * [lang~="x-header-text"] tr td,
             * [lang~="x-header-logo"] tr td {
                 width: 100%;
                 text-align: center!important;
                 padding-bottom: 20px;
             }
+            * [lang~="x-country-d-none"] {
+                display: none;
+            }
+            * [lang~="x-country-phone-btn"] {
+                display: table-cell!important;
+            }
+            * [lang~="x-footer-responsive"] {
+                width: 100%!important;
+                text-align: center;
+            }
+            * [lang~="x-footer-responsive"] tr td {
+                width: 100%!important;
+                text-align: center!important;
+            }
+            * [lang~="x-align-center"] {
+                text-align: center!important;
+            }
+            * [lang~="x-x-footer-logo"] {
+                width: 280px!important;
+                max-width: 280px!important;
+            }
+            * [lang~="x-padding-l-r"] {
+                padding-left: 18px!important;
+                padding-right: 18px!important;
+            }
         }
     </style>
 
     <style type="text/css">
-        @media only screen and (max-width: 480px) {
+        @media (max-width: 480px) {
             .d-table-cell,
             * [lang~="x-d-table-cell"] {
                 display: table;
-                max-width: 420px!important;
+                max-width: 480px!important;
                 width: 100%!important;
             }
             .d-none {
@@ -397,14 +466,14 @@
             }
         }
 
-        @media only screen and (min-width:768px) {
+        @media (min-width:768px) {
             .templateContainer {
                 width: 600px !important;
             }
 
         }
 
-        @media only screen and (max-width: 480px) {
+        @media (max-width: 480px) {
 
             body,
             table,
@@ -418,7 +487,7 @@
 
         }
 
-        @media only screen and (max-width: 480px) {
+        @media (max-width: 480px) {
             body {
                 width: 100% !important;
                 min-width: 100% !important;
@@ -426,19 +495,19 @@
 
         }
 
-        @media only screen and (max-width: 480px) {
+        @media (max-width: 480px) {
             #bodyCell {
                 padding-top: 10px !important;
             }
 
         }
 
-        @media only screen and (max-width: 480px) {
+        /* @media only screen and (max-width: 480px) {
             .mcnRetinaImage {
                 max-width: 100% !important;
             }
 
-        }
+        } */
 
         @media only screen and (max-width: 480px) {
             .mcnImage {
@@ -555,7 +624,7 @@
 
         }
 
-        @media only screen and (max-width: 480px) {
+        /* @media only screen and (max-width: 480px) {
             h1 {
                 font-size: 22px !important;
                 line-height: 125% !important;
@@ -585,7 +654,7 @@
                 line-height: 150% !important;
             }
 
-        }
+        } */
 
         @media only screen and (max-width: 480px) {
 
@@ -619,7 +688,7 @@
             #templateHeader .mcnTextContent,
             #templateHeader .mcnTextContent p {
                 font-size: 16px !important;
-                line-height: 150% !important;
+                line-height: 100% !important;
             }
 
         }
@@ -628,7 +697,7 @@
 
             #templateBody .mcnTextContent,
             #templateBody .mcnTextContent p {
-                font-size: 16px !important;
+                font-size: 12px !important;
                 line-height: 150% !important;
             }
 
@@ -693,11 +762,12 @@
                                                                     border="0" cellpadding="0"
                                                                     lang="x-header-text"
                                                                     cellspacing="0"
-                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    style="display: table-cell;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
-                                                                                style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 21px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: left;">
+                                                                                lang="x-header-text-td"
+                                                                                style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 21px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: left;width: 420px;">
                                                                                 <span style="font-size:14px">
                                                                                     <span style="font-family:Roboto,arial,helvetica neue,helvetica,sans-serif">
                                                                                         <strong style="font-size: 54px;color: #0093A6;line-height: 44px;">В курсе</strong><br>
@@ -714,17 +784,19 @@
                                                                     cellspacing="0"
                                                                     class="mcnCaptionRightImageContentContainer wi-176 header-logo"
                                                                     lang="x-header-logo"
-                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    valign="middle"
+                                                                    style="display: table-cell;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td class="mcnCaptionRightImageContent header-logo"
+                                                                                lang="x-header-logo-td"
                                                                                 valign="top"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;width: 176px;">
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/%D1%8D%D0%B8%D1%86%20%D0%BB%D0%BE%D0%B3%D0%BE%20%D0%BD%D0%BE%D0%B2.png"
                                                                                     width="164"
                                                                                     lang="x-text-center"
-                                                                                    style="max-width: 164px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    style="max-width: 164px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: middle;"
                                                                                     class="mcnImage">
                                                                             </td>
                                                                         </tr>
@@ -769,14 +841,11 @@
                                                     <tr>
                                                         <td class="mcnCaptionBottomImageContent" align="center"
                                                             valign="top"
-                                                            style="padding: 0 0 12px 9px;padding-bottom: 12px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
+                                                            style="padding-top: 0;padding-bottom: 9px;padding-right: 9px;padding-bottom: 12px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
                                                             <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
-                                                                style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                style="max-width: 50px;min-width: 18px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                 class="mcnImage">
-
 
                                                         </td>
                                                         <td valign="top" class="mcnTextContent"
@@ -826,7 +895,8 @@
                                                     <tr>
                                                         <td class="mcnCaptionBottomImageContent" align="center"
                                                             valign="top"
-                                                            style="padding: 0 18px 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                            lang="x-padding-l-r"
+                                                            style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                             <img alt=""
                                                                 src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/image%201.png"
                                                                 width="100%"
@@ -835,7 +905,7 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="mcnTextContent" valign="top"
+                                                        <td class="mcnTextContent" valign="top" lang="x-padding-l-r"
                                                             style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
                                                             width="564">
                                                             <span style="font-size:12px"><span
@@ -883,7 +953,8 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 18px 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                lang="x-padding-l-r"
+                                                                style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
 
 
@@ -897,7 +968,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="mcnTextContent" valign="top"
+                                                            <td class="mcnTextContent" valign="top" lang="x-padding-l-r"
                                                                 style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
                                                                 width="564">
                                                                 <span style="font-size:12px"><strong>«Рязанская область – один из лидеров страны по производительности труда»</strong>
@@ -940,9 +1011,8 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 18px 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
+                                                                lang="x-padding-l-r"
+                                                                style="padding: 0 9px 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
                                                                 <img alt=""
                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/image%203.png"
@@ -950,11 +1020,10 @@
                                                                     style="min-width: 180px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                     class="mcnImage">
 
-
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="mcnTextContent" valign="top"
+                                                            <td class="mcnTextContent" valign="top" lang="x-padding-l-r"
                                                                 style="padding: 0px 9px;font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 16px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;text-align: left;"
                                                                 width="564">
                                                                 <span style="font-size:12px"><span
@@ -1006,9 +1075,9 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 9px 0 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                style="padding-top: 9px;padding-bottom: 9px;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                 <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
-                                                                    style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                    style="max-width: 50px;min-width: 18px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                     class="mcnImage">
                                                             </td>
                                                             <td valign="top" class="mcnTextContent"
@@ -1040,10 +1109,7 @@
                                     <tbody class="mcnCaptionBlockOuter">
                                         <tr>
                                             <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
+                                                style="padding-top: 18px;padding-bottom: 39px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
                                                 <table border="0" cellpadding="0" cellspacing="0"
                                                     class="mcnCaptionRightContentOuter" width="100%"
@@ -1055,43 +1121,23 @@
                                                                 <table align="left" border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionRightImageContentContainer"
+                                                                    lang="x-w-100"
                                                                     width="176"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td class="mcnCaptionRightImageContent"
-                                                                                align="center" valign="top"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
+                                                                                valign="top"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-left: 18px;padding-right: 18px;">
 
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%202sovet.png"
-                                                                                    width="158"
-                                                                                    style="max-width: 158px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    width="100%"
+                                                                                    style="max-width: 220px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
 
-
-
                                                                             </td>
-                                                                        </tr>
-                                                                    </tbody>
-                                                                </table>
-                                                                <table class="mcnCaptionRightTextContentContainer"
-                                                                    align="right" border="0" cellpadding="0"
-                                                                    cellspacing="0" width="352"
-                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td valign="top" class="mcnTextContent"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
-                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank"
-                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
-                                                                                        style="color:#000000">Смена системы налогообложения: чем заменить единый налог?</span></a><br>
-                                                                                <br>
-                                                                                Остается чуть больше месяца до отмены режима ЕНВД – Единого налога на вмененный доход. На какие новые режимы налогообложения выгоднее переходить малому бизнесу? Выбираем до конца года.
-                                                                            </td>
-                                                                            <td>
+                                                                            <td style="display: none;" lang="x-country-phone-btn">
                                                                                 <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
@@ -1099,8 +1145,33 @@
                                                                                     style="max-width: 60px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
                                                                                 </a>
-
-                                                                                
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <table class="mcnCaptionRightTextContentContainer"
+                                                                    align="right" border="0" cellpadding="0"
+                                                                    cellspacing="0" width="352"
+                                                                    lang="x-w-100"
+                                                                    style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                        <tr lang="x-w-100">
+                                                                            <td valign="top" class="mcnTextContent"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
+                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank"
+                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
+                                                                                        style="color:#000000;font-size: 15px;">Смена системы налогообложения: чем заменить единый налог?</span></a><br>
+                                                                                <br>
+                                                                                Остается чуть больше месяца до отмены режима ЕНВД – Единого налога на вмененный доход. На какие новые режимы налогообложения выгоднее переходить малому бизнесу? Выбираем до конца года.
+                                                                            </td>
+                                                                            <td lang="x-country-d-none">
+                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank" style="text-decoration: none;">
+                                                                                    <img alt=""
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
+                                                                                    width="60"
+                                                                                    style="max-width: 60px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    class="mcnImage">
+                                                                                </a>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -1123,10 +1194,7 @@
                                     <tbody class="mcnCaptionBlockOuter">
                                         <tr>
                                             <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
+                                                style="padding-top: 9px;padding-bottom: 39px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
                                                 <table border="0" cellpadding="0" cellspacing="0"
                                                     class="mcnCaptionRightContentOuter" width="100%"
@@ -1138,24 +1206,28 @@
                                                                 <table align="left" border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionRightImageContentContainer"
+                                                                    lang="x-w-100"
                                                                     width="176"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td class="mcnCaptionRightImageContent"
-                                                                                align="center" valign="top"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
+                                                                                valign="top"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-left: 18px;padding-right: 18px;">
                                                                                 <img alt=""
-                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%202covid19.png"
-                                                                                    width="158"
-                                                                                    style="max-width: 158px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/time-3096535_1920.jpg"
+                                                                                    width="100%"
+                                                                                    style="max-width: 220px;border-radius: 10px;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
-
-
-
+                                                                            </td>
+                                                                            <td style="display: none;" lang="x-country-phone-btn">
+                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank" style="text-decoration: none;">
+                                                                                    <img alt=""
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
+                                                                                    width="60"
+                                                                                    style="max-width: 60px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    class="mcnImage">
+                                                                                </a>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -1163,18 +1235,19 @@
                                                                 <table class="mcnCaptionRightTextContentContainer"
                                                                     align="right" border="0" cellpadding="0"
                                                                     cellspacing="0" width="352"
+                                                                    lang="x-w-100"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
-                                                                        <tr>
+                                                                        <tr lang="x-w-100">
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
                                                                                 <a href="https://rg.ru/2020/11/12/nalogovye-kanikuly-dlia-malogo-biznesa-prodlevaiut-do-konca-goda.html" target="_blank"
                                                                                     style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
-                                                                                        style="color:#000000">Налоговые каникулы продлятся до конца года</span></a><br>
+                                                                                        style="color:#000000;font-size: 15px;">Налоговые каникулы продлятся до конца года</span></a><br>
                                                                                 <br>
                                                                                 Отсрочка по платежам утверждена для пострадавшего из-за пандемии малого и среднего бизнеса и индивидуальных предпринимателей, работающих в ряде отраслей.
                                                                             </td>
-                                                                            <td>
+                                                                            <td lang="x-country-d-none">
                                                                                 <a href="https://rg.ru/2020/11/12/nalogovye-kanikuly-dlia-malogo-biznesa-prodlevaiut-do-konca-goda.html" target="_blank" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
@@ -1204,10 +1277,7 @@
                                     <tbody class="mcnCaptionBlockOuter">
                                         <tr>
                                             <td class="mcnCaptionBlockInner" valign="top"
-                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
+                                                style="padding-top: 9px;padding-bottom: 39px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
                                                 <table border="0" cellpadding="0" cellspacing="0"
                                                     class="mcnCaptionRightContentOuter" width="100%"
@@ -1219,24 +1289,28 @@
                                                                 <table align="left" border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionRightImageContentContainer"
+                                                                    lang="x-w-100"
                                                                     width="176"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td class="mcnCaptionRightImageContent"
-                                                                                align="center" valign="top"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
-
+                                                                                valign="top"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;padding-left: 18px;padding-right: 18px;">
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Rectangle%202covid19.png"
-                                                                                    width="158"
-                                                                                    style="max-width: 158px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    width="100%"
+                                                                                    style="max-width: 220px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
-
-
-
+                                                                            </td>
+                                                                            <td style="display: none;" lang="x-country-phone-btn">
+                                                                                <a href="https://rg.ru/2020/11/22/kakoj-rezhim-vybrat-posle-otmeny-edinogo-naloga.html" target="_blank" style="text-decoration: none;">
+                                                                                    <img alt=""
+                                                                                    src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
+                                                                                    width="60"
+                                                                                    style="max-width: 60px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                                    class="mcnImage">
+                                                                                </a>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -1244,18 +1318,19 @@
                                                                 <table class="mcnCaptionRightTextContentContainer"
                                                                     align="right" border="0" cellpadding="0"
                                                                     cellspacing="0" width="352"
+                                                                    lang="x-w-100"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
-                                                                        <tr>
+                                                                        <tr lang="x-w-100">
                                                                             <td valign="top" class="mcnTextContent"
                                                                                 style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
                                                                                 <a href="https://rg.ru/2020/11/08/reestr-malogo-biznesa-budet-obnovliatsia-ezhemesiachno.html " target="_blank"
                                                                                     style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #26a1bb;font-weight: bold;text-decoration: none;"><span
-                                                                                        style="color:#000000">Реестр МСП будет обновляться ежемесячно</span></a><br>
+                                                                                        style="color:#000000;font-size: 15px;">Реестр МСП будет обновляться ежемесячно</span></a><br>
                                                                                 <br>
                                                                                 Такое нововведение даст возможность малому бизнесу своевременно получать меры господдержки, льготы и преимущества при участии в госзакупках.
                                                                             </td>
-                                                                            <td>
+                                                                            <td lang="x-country-d-none">
                                                                                 <a href="https://rg.ru/2020/11/08/reestr-malogo-biznesa-budet-obnovliatsia-ezhemesiachno.html " target="_blank" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/arrow.png"
@@ -1302,9 +1377,9 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 0 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                style="padding-top: 0;padding-bottom: 9px;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                 <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
-                                                                    style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                    style="max-width: 50px;min-width: 18px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                     class="mcnImage">
                                                             </td>
                                                             <td valign="top" class="mcnTextContent"
@@ -1346,9 +1421,10 @@
                                                         <tr>
                                                             <td valign="middle" class="mcnCaptionLeftContentInner"
                                                                 style="padding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;vertical-align: middle;">
-                                                                <table align="right" border="0" cellpadding="0"
+                                                                <table border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionLeftImageContentContainer"
+                                                                    lang="x-w-100"
                                                                     width="100"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
@@ -1360,9 +1436,9 @@
 
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/office-1209640_1920.jpg"
-                                                                                    width="100%"
-                                                                                    style="max-width: 90px;border: 10px;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
-                                                                                    class="mcnImage important-region">
+                                                                                    width="90px"
+                                                                                    style="max-width: 90px;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;border-radius: 10px;"
+                                                                                    class="mcnImage">
 
 
                                                                             </td>
@@ -1375,8 +1451,8 @@
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td valign="top" class="mcnTextContent"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
+                                                                            <td valign="top" class="mcnTextContent2"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;padding-top: 14px;">
                                                                                 <a href="https://mineconom.ryazangov.ru/announcements/176952/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
                                                                                     <span>
                                                                                         Для рязанского бизнеса разработаны обучающие кейсы 
@@ -1419,9 +1495,10 @@
                                                         <tr>
                                                             <td valign="top" class="mcnCaptionLeftContentInner"
                                                                 style="padding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                <table align="right" border="0" cellpadding="0"
+                                                                <table border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionLeftImageContentContainer"
+                                                                    lang="x-w-100"
                                                                     width="100"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
@@ -1433,9 +1510,9 @@
 
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/imgonline-com-ua-Compressed-PUDoWBZzS5rn.jpg"
-                                                                                    width="100%"
-                                                                                    style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
-                                                                                    class="mcnImage important-region">
+                                                                                    width="90px"
+                                                                                    style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;border-radius: 10px;"
+                                                                                    class="mcnImage">
 
 
                                                                             </td>
@@ -1448,8 +1525,8 @@
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td valign="top" class="mcnTextContent"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
+                                                                            <td valign="top" class="mcnTextContent2"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;padding-top: 14px;">
                                                                                 <a href="https://www.ryazangov.ru/news/ryazan/1191034/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
                                                                                     <span>
                                                                                         Экспортеров приглашают на VII форум «Сделано в России»
@@ -1492,9 +1569,10 @@
                                                         <tr>
                                                             <td valign="top" class="mcnCaptionLeftContentInner"
                                                                 style="padding: 9px 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                <table align="right" border="0" cellpadding="0"
+                                                                <table border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionLeftImageContentContainer"
+                                                                    lang="x-w-100"
                                                                     width="100"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
@@ -1506,9 +1584,9 @@
 
                                                                                 <img alt=""
                                                                                     src="#"
-                                                                                    width="100%"
-                                                                                    style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
-                                                                                    class="mcnImage important-region">
+                                                                                    width="90px"
+                                                                                    style="max-width: 90px;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;border-radius: 10px;padding-bottom: 14px;"
+                                                                                    class="mcnImage">
 
 
                                                                             </td>
@@ -1521,8 +1599,8 @@
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td valign="top" class="mcnTextContent"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;">
+                                                                            <td valign="top" class="mcnTextContent2"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #434242;font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 150%;text-align: left;padding-top: 14px;">
                                                                                 <a href="https://agency62.ru/uchastniki-klastera-stroitelnyh-materialov-obsudili-sovmestnyj-proekt/" target="_blank" style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color:#434242;font-weight: bold;text-decoration: none;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;font-size:12px;">
                                                                                     <span>
                                                                                         Кластерная кооперация дает плоды
@@ -1572,14 +1650,11 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 0 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-
-
+                                                                style="padding-top: 0;padding-bottom: 9px;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
 
                                                                 <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
-                                                                    style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                    style="max-width: 50px;min-width: 18px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                     class="mcnImage">
-
 
                                                             </td>
                                                             <td valign="top" class="mcnTextContent"
@@ -1660,7 +1735,7 @@
                                                                                     width="125"
                                                                                     style="max-width: 125px;border-radius: 50%;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
-                                                                                    <span class="d-none" style="position: absolute;right: -76px; font-size: 100px;opacity: 0.2;color: #ffffff;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;">«</span>
+                                                                                    <span class="d-none" lang="x-d-none" style="position: absolute;right: -76px; font-size: 100px;opacity: 0.2;color: #ffffff;font-family:roboto,helvetica neue,helvetica,arial,sans-serif;">«</span>
                                                                             </td>
                                                                         </tr>
                                                                     </tbody>
@@ -1668,11 +1743,12 @@
                                                                 <table class="mcnImageCardRightTextContentContainer"
                                                                     align="right" border="0" cellpadding="0"
                                                                     cellspacing="0" width="346"
+                                                                    lang="x-w-100-center"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
-                                                                                style="padding-right: 18px;padding-top: 18px;padding-bottom: 48px;color: #434242;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;line-height: 150%;">
+                                                                                style="padding-left: 18px;padding-right: 18px;padding-top: 18px;padding-bottom: 48px;color: #434242;font-family: Helvetica;font-size: 14px;font-weight: normal;text-align: center;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;line-height: 150%;">
                                                                                 <div style="text-align: left;"><span
                                                                                         style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif"><strong><span
                                                                                                 style="font-size:14px">Курс на повышение производительности труда </span></strong><br>
@@ -1722,9 +1798,9 @@
                                                         <tr>
                                                             <td class="mcnCaptionBottomImageContent" align="center"
                                                                 valign="top"
-                                                                style="padding: 0 0 9px 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                style="padding-top: 0;padding-bottom: 9px;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                 <img alt="" src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Path.png" width="12"
-                                                                    style="max-width: 175px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
+                                                                    style="max-width: 50px;min-width: 18px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                     class="mcnImage">
                                                             </td>
                                                             <td valign="top" class="mcnTextContent"
@@ -1855,6 +1931,7 @@
                                                                 <table align="left" border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionRightImageContentContainer"
+                                                                    lang="x-footer-responsive"
                                                                     width="176"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
@@ -1868,6 +1945,7 @@
                                                                                 <img alt=""
                                                                                     src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/%D0%BB%D0%BE%D0%B3%D0%BE%D1%84%D1%83%D1%82%D0%B5%D1%80.png"
                                                                                     width="158"
+                                                                                    lang="x-footer-logo"
                                                                                     style="max-width: 158px;border-radius: 0%;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;vertical-align: bottom;"
                                                                                     class="mcnImage">
 
@@ -1880,12 +1958,13 @@
                                                                 <table class="mcnCaptionRightTextContentContainer"
                                                                     align="right" border="0" cellpadding="0"
                                                                     cellspacing="0" width="352"
+                                                                    lang="x-footer-responsive"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
-                                                                                style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: center;">
-                                                                                <div style="text-align: right;"><span
+                                                                                style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: center; padding-top: 12px;padding-bottom: 12px;">
+                                                                                <div style="text-align: right;" lang="x-align-center"><span
                                                                                         style="font-size:12px"><span
                                                                                             style="font-family:roboto,helvetica neue,helvetica,arial,sans-serif">Вы
                                                                                             получили это письмо, так как
@@ -1931,15 +2010,16 @@
                                                                 <table align="left" border="0" cellpadding="0"
                                                                     cellspacing="0"
                                                                     class="mcnCaptionRightImageContentContainer"
+                                                                    lang="x-w-100-center"
                                                                     width="176"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
-                                                                        <tr>
+                                                                        <tr lang="x-align-center">
                                                                             <td class="mcnCaptionRightImageContent"
                                                                                 align="left" valign="top"
-                                                                                width="30"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                <a href="#">
+                                                                                lang="x-align-center"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: inline-block;padding-left: 9px;padding-right: 9px;">
+                                                                                <a href="https://www.facebook.com/eicentr_rzn-102823198086787/" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                         src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Vector.png"
                                                                                         width="13"
@@ -1949,8 +2029,9 @@
                                                                             </td>
                                                                             <td class="mcnCaptionRightImageContent"
                                                                                 align="left" valign="top"
-                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
-                                                                                <a href="#">
+                                                                                lang="x-align-center"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;display: inline-block;padding-left: 9px;padding-right: 9px;">
+                                                                                <a href="https://instagram.com/eicentr_rzn?igshid=7pkeb75ov9te" style="text-decoration: none;">
                                                                                     <img alt=""
                                                                                         src="https://raw.githubusercontent.com/remizovMaxim/emailPictureStore/main/Group.png"
                                                                                         width="33"
@@ -1963,13 +2044,14 @@
                                                                 </table>
                                                                 <table class="mcnCaptionRightTextContentContainer"
                                                                     align="right" border="0" cellpadding="0"
+                                                                    lang="x-footer-responsive"
                                                                     cellspacing="0" width="352"
                                                                     style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
                                                                     <tbody>
                                                                         <tr>
                                                                             <td valign="top" class="mcnTextContent"
-                                                                                style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: center;">
-                                                                                <div style="text-align: right;"><a
+                                                                                style="font-family: Roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size: 12px;line-height: 100%;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #656565;text-align: center;padding-top: 12px;">
+                                                                                <div style="text-align: right;" lang="x-align-center"><a
                                                                                         href="#" target="_blank"
                                                                                         style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #656565;font-weight: normal;text-decoration: underline;">Отписаться
                                                                                         от рассылки</a></div>
